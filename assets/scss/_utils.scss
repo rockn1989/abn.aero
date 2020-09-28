@@ -1,0 +1,7 @@
+
+@supports (-webkit-text-stroke: 1px #fff) {
+	.text-stroke {
+		color: transparent;
+		-webkit-text-stroke: 1px #fff;
+	}
+}

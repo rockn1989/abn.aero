@@ -1,0 +1,28 @@
+.route-list {
+	&__item {
+		overflow: hidden;
+	}
+	&__item-content {
+		position: relative;
+		padding-top: 55px;
+		color: $white;
+		transform: translateX(-100%);
+		transition: transform 1.3s ease;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background: $lightBlue;
+		}
+	}
+}
+
+
+.slide-left {
+	transform: translateX(0);
+}

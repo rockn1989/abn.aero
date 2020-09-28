@@ -1,0 +1,38 @@
+.top-banner {
+	.title-h1 {
+		position: relative;
+		margin-bottom: 0;
+		color: $white;
+		z-index: 10;
+	}
+}
+
+.route-img {
+	position: relative;
+	transform: translate(10px, 12px);
+	z-index: 9;
+	&__map {
+		width: 0;
+		overflow: hidden;
+		transition: width 3.5s ease;
+		&.active {
+			width: 100%;
+		}
+		svg {
+			min-width: 1223px;
+		}
+	}
+	.scroll-img {
+		position: absolute;
+		top: -130px;
+		right: -20px;
+		opacity: 0;
+		transition: opacity .3s ease;
+		transition-delay: 2.8s;
+	}
+	&.active {
+		.scroll-img {
+			opacity: 1;
+		}
+	}
+}

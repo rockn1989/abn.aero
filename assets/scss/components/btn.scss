@@ -1,0 +1,81 @@
+.btn {
+	padding: 2.5em;
+	display: inline-block;
+	vertical-align: top;
+	font-family: $mainFont;
+	font-weight: 500;
+	color: $white;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	background: linear-gradient(to right, $lightBlue 0%, $lightBlue 50%, $blue 50%);
+	background-size: 200%;
+	background-position: 100%;
+	border: none;
+	transition: background-position .5s ease;
+	&:hover {
+		color: $white;
+		text-decoration: none;
+		background-position: 0;
+	}
+	&:focus,&:active {
+		border: none;
+		outline: none;
+	}
+	&--full {
+		width: 100%;
+	}
+}
+
+
+.btn-menu {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: $white;
+	&__burger {
+		position: relative;
+		margin-right: 24px;
+		display: inline-block;
+		vertical-align: top;
+		width: 32px;
+		height: 15px;
+		&>span {
+			position: absolute;
+			left: 0;
+			width: 32px;
+			height: 2px;
+			display: block;
+			background: $white;
+			transform-origin: center;
+			transition: transform .3s ease;
+			&.line--one {
+				top: 0;
+			}
+			&.line--two {
+				bottom: 0;
+			}
+		}
+	}
+	&:hover {
+		color: $lightBlue;
+		text-decoration: none;
+		.btn-menu__burger {
+			span {
+				background: $lightBlue;
+			}
+			.line--one {
+				transform: rotate(45deg);
+				top: 50%;
+			}
+			.line--two {
+				transform: rotate(-45deg);
+				top: 50%;
+			}
+		}
+	}
+}

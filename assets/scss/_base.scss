@@ -1,0 +1,42 @@
+html,
+body {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-family: $mainFont;
+	font-style: normal;
+	color: $darkBlue;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	header.header,
+	footer.footer {
+		flex-grow: 1;
+	}
+	.page-wrapper {
+		flex-grow: 2;
+	}
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.uk-container {
+	margin: 0 auto;
+	box-sizing: border-box;
+	max-width: $containerWidth;
+	@media (min-width: $mob-xs) {
+		padding: 0 15px;
+	};
+	@media (min-width: $tablet-w) {
+		padding: 0 25px;	
+	};
+	&--lg {
+		max-width: $containerWidthLg;
+	}
+}
