@@ -68,6 +68,15 @@
 			span {
 				background: $lightBlue;
 			}
+		}
+	}
+	&.active {
+		color: $lightBlue;
+		text-decoration: none;
+		.btn-menu__burger {
+			span {
+				background: $lightBlue;
+			}
 			.line--one {
 				transform: rotate(45deg);
 				top: 50%;

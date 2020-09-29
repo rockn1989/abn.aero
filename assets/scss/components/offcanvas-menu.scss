@@ -1,0 +1,75 @@
+.uk-offcanvas {
+	z-index: 800;
+}
+.uk-offcanvas-bar {
+	background: $blue;
+	left: auto;
+	@media (min-width: $mob-xs) {
+		width: 100vw;
+		right: -100vw !important;
+	};
+	@media (min-width: $tablet-w) {
+		width: 50vw;
+		right: -50vw !important;
+	};
+	@media (min-width: $desk-w) {
+		padding-top: 0px;
+	};
+	.uk-nav {
+		margin-top: 80px;
+		li {
+			margin-bottom: 10px;
+			@media (min-width: $mob-xs) {
+				text-align: center;
+			};
+			@media (min-width: $tablet-w) {
+				text-align: left;
+			};
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				color: $white;
+				display: inline-block;
+				font-size: 24px;
+				line-height: 30px;
+				font-weight: 800;
+				text-transform: uppercase;
+				transition: color .3s ease;
+				@media (min-width: $tablet-w) {
+					display: block;
+					font-size: 36px;
+					line-height: 48px;	
+				};
+				&:hover {
+					color: $lightBlue;
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
+	right: 0 !important;
+}
+.uk-offcanvas-bar-animation {
+	transition-duration: .5s;
+}
+
+.uk-panel {
+	&__top {
+		a {
+			color: $white;
+		}
+		.btn-menu {
+			color: $white;
+			.btn-menu__burger {
+				span {
+					background: $white;
+				}
+			}
+		}
+	}
+}

@@ -1,11 +1,20 @@
 .header {
 	position: relative;
-	padding-top: 243px;
+	padding-top: 120px;
 	background-image: linear-gradient(to bottom, rgba(0, 24, 64, .7) 100%), url('../img/media/header-bg.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0 0, 0 center;
 	height: 100vh;
+	@media (min-width: $mob-s) {
+		padding-top: 140px;
+	};
+	@media (min-width: $tablet-w) {
+		padding: 160px;
+	};
+	@media (min-width: $desk-w) {
+		padding-top: 243px;
+	};
 	&:before {
 		content: '';
 		position: absolute;
@@ -28,6 +37,7 @@
 	padding: 0 25px;
 	max-width: 1410px;
 	transform: translateX(-50%);
+	z-index: 700;
 	&__inner {
 		display: flex;
 		align-items: center;

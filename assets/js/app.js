@@ -16,5 +16,17 @@ $(function () {
 	path.style.strokeDashoffset = '0';
 	path.style.strokeDasharray = '0, 16' */
 
-	$('.route-img__map, .route-img').addClass('active')
+	$('.route-img__map, .route-img').addClass('active');
+
+
+	UIkit.util.on($('#offcanvas-menu'),'show', function () {
+		$('.js__toggle-state').addClass('active');
+		$('.btn-menu__text').text('закрыть')
+	});
+
+	UIkit.util.on($('#offcanvas-menu'), 'hide', function () {
+		$('.js__toggle-state').removeClass('active');
+		$('.btn-menu__text').text('меню')
+	});
+
 });
