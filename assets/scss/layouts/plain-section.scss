@@ -1,0 +1,53 @@
+
+.plain-section {
+	.title-h2 {
+		margin-bottom: 80px;
+	}
+	.text {
+		margin-bottom: 60px;
+	}
+}
+
+.plain-img {
+	margin-bottom: 90px;
+	img {
+		transform: translate(-75%, 25%);
+		opacity: 0;
+		transition: transform 1.75s, opacity 1.5s ease;
+	}
+	&.fly {
+		img {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+}
+
+.about-pilot {
+	margin-bottom: 80px;
+	padding-top: 60px;
+	border-top: 1px solid $lightBlue;
+}
+
+
+.pilot-info {
+	&__img {
+		margin-bottom: 30px;
+		width: 190px;
+		height: 190px;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			max-height: 100%;;
+		}
+	}
+	&__name {
+		margin-bottom: 20px;
+		color: $blue;
+		font-size: 18px;
+		line-height: 21px;
+		text-transform: uppercase;
+		font-family: $titleFont;
+	}
+}

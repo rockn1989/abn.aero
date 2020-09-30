@@ -1,7 +1,30 @@
 
 @supports (-webkit-text-stroke: 1px #fff) {
-	.text-stroke {
+	.text-stroke-white {
 		color: transparent;
 		-webkit-text-stroke: 1px #fff;
 	}
+
+	.text-stroke-blue {
+		color: transparent;
+		-webkit-text-stroke: 1px $blue;
+	}
+	
+}
+
+.section-padding {
+	@media (min-width: $mob-xs) {
+		padding: 40px 0;
+	};
+	@media (min-width: $tablet-w) {
+		padding: 100px 0 65px;
+	};
+	@media (min-width: $desk-w) {
+		padding: 160px 0 65px;	
+	};
+}
+
+
+.blue {
+	color: $blue;
 }

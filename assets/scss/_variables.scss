@@ -1,7 +1,9 @@
 $mob-xs: 0px;
 $mob-s: 640px;
-$tablet-w: 960px;
-$desk-w: 1200px;
+$tablet-w: 768px;
+$desk-w: 960px;
+$desk-w-lg: 1200px;
+$desk-w-xlg: 1440px;
 
 $mainFont: "GraphikLCG";
 $titleFont: "2MASSJ1808-Heavy";
@@ -16,5 +18,7 @@ $bgBlue: #09194E;
 $bg: #E4EEF5;
 $gray: #4B71A0;
 
+$containerWidthSm: 940px;
 $containerWidth: 1180px;
 $containerWidthLg: 1410px;
+$containerWidthXlg: 1440px;

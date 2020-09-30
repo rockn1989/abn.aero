@@ -36,7 +36,20 @@ body {
 	@media (min-width: $tablet-w) {
 		padding: 0 25px;	
 	};
+	&--sm {
+		max-width: $containerWidthSm;
+	}
 	&--lg {
 		max-width: $containerWidthLg;
+	}
+	&--xlg {
+		overflow: hidden;
+		@media (min-width: $mob-xs) {
+			padding: 0 20px;
+		};
+		@media (min-width: $desk-w) {
+			padding: 0;
+		};
+		max-width: $containerWidthXlg;
 	}
 }
