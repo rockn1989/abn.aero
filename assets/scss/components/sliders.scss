@@ -1,5 +1,3 @@
-
-
 .slider-voyage {
 	.slider {
 		.slick-track {
@@ -113,5 +111,125 @@
 		&__desc {
 			max-width: 300px;
 		}
+	}
+}
+
+.video-slider-section {
+	.uk-conainer {
+		padding: 0;
+	}
+}
+
+.video-slider {
+	.slide {
+		.youtube {
+			position: relative;
+			padding-top: 55.6%;
+			height: 0;
+			min-height: 375px;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				z-index: 11;
+			}
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 20;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: block;
+				background: $bgBlue;
+				opacity: 0.7;
+				z-index: 12;
+			}
+			&__title {
+				position: absolute;
+				top: 17%;
+				left: 19%;
+				max-width: 780px;
+				z-index: 15;
+			}
+		}
+		.play-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translate(-50%, -50%);
+			background: $blue url('../img/icon-svg/youtube.svg') center no-repeat;
+			z-index: 16;
+			cursor: pointer;
+		}
+	}
+}
+
+.video-frame {
+	position: relative;
+	padding-top: 55.6%;
+	height: 0;
+	background: $blue;
+	&__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__preview {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__title {
+		position: absolute;
+		top: 17%;
+		left: 19%;
+		max-width: 780px;
+	}
+	&__play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translate(-50%, -50%);
+	}
+	&__video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }

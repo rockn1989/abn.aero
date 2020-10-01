@@ -45,9 +45,9 @@ body {
 	&--xlg {
 		overflow: hidden;
 		@media (min-width: $mob-xs) {
-			padding: 0 20px;
+			padding: 0;
 		};
-		@media (min-width: $desk-w) {
+		@media (min-width: $tablet-w) {
 			padding: 0;
 		};
 		max-width: $containerWidthXlg;

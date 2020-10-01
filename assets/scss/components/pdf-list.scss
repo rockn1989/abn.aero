@@ -1,0 +1,26 @@
+.pdf-list {
+	@include list-reset();
+	li {
+		margin-bottom: 60px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid $lightBlue;
+		@media (min-width: $mob-xs) {
+			margin-bottom: 24px;
+			padding-bottom: 24px;
+		};
+		@media (min-width: $tablet-w) {
+			margin-bottom: 42px;
+			padding-bottom: 42px;
+		};
+		@media (min-width: $desk-w) {
+			margin-bottom: 60px;
+			padding-bottom: 60px;
+		};
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border: none;
+		}
+	}
+}
+

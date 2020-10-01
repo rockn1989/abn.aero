@@ -25,3 +25,23 @@
 		}
 	 }
  }
+
+
+ .pdf-link {
+	 display: flex;
+	 align-items: center;
+	 &:hover {
+		 text-decoration: none;
+	 }
+	 &__icon {
+		 margin-right: 40px;
+		 flex-shrink: 0;
+		 flex-basis: 48px;
+	 }
+	 &__text {
+		 font-size: 16px;
+		 line-height: 24px;
+		 font-weight: 500;
+		 text-transform: uppercase;
+	 }
+ }
