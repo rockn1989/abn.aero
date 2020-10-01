@@ -1,22 +1,27 @@
 .header {
 	position: relative;
 	padding-top: 120px;
-	background-image: linear-gradient(to bottom, rgba(0, 24, 64, .7) 100%), url('../img/media/header-bg.png');
+	padding-bottom: 50px;
+	background-image: linear-gradient(to bottom, rgba(0, 24, 64, 0.7) 100%),
+		url("../img/media/header-bg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0 0, 0 center;
-	height: 100vh;
-	@media (min-width: $mob-s) {
+	min-height: 100vh;
+	@media (min-width: $mob-xs) {
 		padding-top: 140px;
-	};
+	}
 	@media (min-width: $tablet-w) {
-		padding: 160px;
-	};
+		padding-top: 160px;
+	}
 	@media (min-width: $desk-w) {
-		padding-top: 243px;
-	};
+		padding-top: 200px;
+	}
+	@media (min-width: $desk-w-lg) {
+		padding-top: 240px;
+	}
 	&:before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -24,7 +29,7 @@
 		height: 100%;
 		display: block;
 		background: $darkBlue;
-		opacity: .7;
+		opacity: 0.7;
 		z-index: -1;
 	}
 }
@@ -50,7 +55,7 @@
 	display: flex;
 	align-items: center;
 	margin-left: auto;
-	&>a {
+	& > a {
 		margin-left: 60px;
 		color: $white;
 		&:first-child {
@@ -58,7 +63,6 @@
 		}
 	}
 }
-
 
 .logo {
 	display: block;

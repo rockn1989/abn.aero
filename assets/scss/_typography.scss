@@ -1,5 +1,8 @@
-
-h1,h2,h3,h4,h5,
+h1,
+h2,
+h3,
+h4,
+h5,
 .title-h1,
 .title-h2,
 .title-h3,
@@ -9,44 +12,65 @@ h1,h2,h3,h4,h5,
 	text-transform: uppercase;
 }
 
-h1, .title-h1 {
+h1,
+.title-h1 {
 	margin-bottom: 80px;
 	font-size: 23px;
 	line-height: 30px;
 	@media (min-width: $tablet-w) {
 		font-size: 44px;
 		line-height: 50px;
-	};
+	}
 	@media (min-width: $desk-w) {
+		font-size: 60px;
+		line-height: 68px;
+	}
+	@media (min-width: $desk-w-lg) {
 		font-size: 72px;
 		line-height: 80px;
-	};
+	}
+	/* 	@media (min-width: $mob-xs) {
+		font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1410));
+		line-height: calc(30px + (16 + 16 * 0.7) * ((100vw - 320px) / 1410));
+	}
+	@media (min-width: $tablet-w) {
+		font-size: calc(32px + 16 * ((100vw - 768px) / 1410));
+		line-height: calc(30px + (16 + 16 * 0.7) * ((100vw - 768px) / 1410));
+	}
+	@media (min-width: $desk-w) {
+		font-size: calc(50px + 16 * (100vw / 1410));
+		line-height: calc(58px + 16 * (100vw / 1410));
+	} */
 }
 
-h2, .title-h2 {
+h2,
+.title-h2 {
 	font-size: 24px;
 	line-height: 30px;
 	@media (min-width: $tablet-w) {
 		font-size: 44px;
 		line-height: 56px;
-	};
-	@media (min-width: $desk-w) {
+	}
+	@media (min-width: $desk-w-lg) {
 		font-size: 64px;
 		line-height: 72px;
-	};
+	}
 }
 
-h3, .title-h3 {
+h3,
+.title-h3 {
 	font-size: 52px;
 	line-height: 64px;
 }
 
-h4, .title-h4 {
+h4,
+.title-h4 {
 	font-size: 36px;
 	line-height: 48px;
 }
 
-h5, .title-h5 {
+h5,
+.title-h5 {
 	font-size: 18px;
 	line-height: 22px;
 }
