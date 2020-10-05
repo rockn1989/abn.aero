@@ -1,32 +1,37 @@
 $(function () {
-/* 	const path = document.querySelector('.route-map path')
-	var length = path.getTotalLength();
-	// Clear any previous transition
-	path.style.transition = path.style.WebkitTransition = 'none';
-	// Set up the starting positions
-	path.style.strokeDasharray = length + ' ' + length;
-	path.style.strokeDashoffset = length;
-	// Trigger a layout so styles are calculated & the browser
-	// picks up the starting position before animating
-	path.getBoundingClientRect();
-	// Define our transition
-	path.style.transition = path.style.WebkitTransition =
-		'stroke-dashoffset 2s ease-in-out';
-	// Go!
-	path.style.strokeDashoffset = '0';
-	path.style.strokeDasharray = '0, 16' */
+	const util = UIkit.util;
 
-	$('.route-img__map, .route-img').addClass('active');
+	$(".route-img__map, .route-img").addClass("active");
 
-
-	UIkit.util.on($('#offcanvas-menu'),'show', function () {
-		$('.js__toggle-state').addClass('active');
-		$('.btn-menu__text').text('закрыть')
+	util.on($("#offcanvas-menu"), "show", function () {
+		$(".js__toggle-state").addClass("active");
+		$(".btn-menu__text").text("закрыть");
 	});
 
-	UIkit.util.on($('#offcanvas-menu'), 'hide', function () {
-		$('.js__toggle-state').removeClass('active');
-		$('.btn-menu__text').text('меню')
+	util.on($("#offcanvas-menu"), "hide", function () {
+		$(".js__toggle-state").removeClass("active");
+		$(".btn-menu__text").text("меню");
 	});
 
+	const svgPrint = util.$(".svg-print");
+
+	UIkit.scrollspy(svgPrint, { repeat: true });
+
+	util.on(svgPrint, "inview", function () {
+		$(".svg-print").addClass("vis");
+	});
+	util.on(svgPrint, "outview", function () {
+		$(".svg-print").removeClass("vis");
+	});
+
+	const video = util.$(".video-banner video");
+
+	UIkit.scrollspy(video, { repeat: true, hidden: false });
+
+	util.on(video, "inview", function () {
+		video.play();
+	});
+	util.on(video, "outview", function () {
+		video.pause();
+	});
 });

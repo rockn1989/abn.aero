@@ -1,0 +1,45 @@
+.footer {
+	padding: 40px 0 80px;
+	background: $bgBlue;
+	.logo {
+		margin-left: auto;
+	}
+}
+
+.copyright,
+.politics {
+	margin-bottom: 40px;
+	color: $white;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+.politics {
+	position: relative;
+	display: inline-block;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		display: block;
+		width: 0;
+		height: 1px;
+		background: $lightBlue;
+		transition: width 0.3s ease;
+	}
+	&:hover {
+		color: $lightBlue;
+		text-decoration: none;
+		&:after {
+			width: 100%;
+		}
+	}
+}
+
+.cookie-rules {
+	font-size: 18px;
+	line-height: 22px;
+	color: $gray;
+}

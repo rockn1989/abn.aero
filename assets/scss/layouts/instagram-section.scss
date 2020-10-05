@@ -1,0 +1,13 @@
+.instagram-section {
+	.link-wrapper {
+		height: 100%;
+		align-items: flex-end;
+		justify-content: flex-end;
+		@media (min-width: $mob-xs) {
+			padding-top: 20px;
+		}
+		@media (min-width: $tablet-w) {
+			padding-top: 0;
+		}
+	}
+}

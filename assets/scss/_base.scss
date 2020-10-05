@@ -32,10 +32,10 @@ body {
 	max-width: $containerWidth;
 	@media (min-width: $mob-xs) {
 		padding: 0 15px;
-	};
+	}
 	@media (min-width: $tablet-w) {
-		padding: 0 25px;	
-	};
+		padding: 0 25px;
+	}
 	&--sm {
 		max-width: $containerWidthSm;
 	}
@@ -46,10 +46,16 @@ body {
 		overflow: hidden;
 		@media (min-width: $mob-xs) {
 			padding: 0;
-		};
+		}
 		@media (min-width: $tablet-w) {
 			padding: 0;
-		};
+		}
 		max-width: $containerWidthXlg;
+	}
+}
+
+.uk-width-2-4\@m {
+	@media (min-width: $desk-w) {
+		width: 50%;
 	}
 }

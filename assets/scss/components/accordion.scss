@@ -1,0 +1,50 @@
+.uk-accordion {
+	li {
+		margin: 0;
+		padding: 1em 1em 0.75em;
+		border: 1px solid $lightBlue;
+		border-bottom-color: transparent;
+		@media (min-width: $tablet-w) {
+			padding: 1.3em 1.3em 1em;
+		}
+		@media (min-width: $desk-w) {
+			padding: 1.9em 1.9em 1.4em;
+		}
+		&:last-child {
+			border-bottom-color: $lightBlue;
+		}
+		&.uk-open {
+			border-color: $blue;
+			border-bottom-color: $blue;
+			.uk-accordion-title {
+				color: $blue;
+				&:before {
+					background-image: url("../img/icon-svg/chevron-top.svg");
+				}
+			}
+		}
+	}
+	& > :nth-child(n + 2) {
+		margin-top: 0;
+	}
+}
+
+.uk-accordion-title {
+	font-size: 21px;
+	line-height: 24px;
+	color: $gray;
+	@media (min-width: $tablet-w) {
+		font-size: 26px;
+		line-height: 32px;
+	}
+	@media (min-width: $desk-w) {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	&:hover {
+		color: $blue;
+	}
+	&:before {
+		background-image: url("../img/icon-svg/chevron-down.svg");
+	}
+}
