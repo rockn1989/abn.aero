@@ -1,4 +1,3 @@
-
 @supports (-webkit-text-stroke: 1px #fff) {
 	.text-stroke-white {
 		color: transparent;
@@ -9,19 +8,18 @@
 		color: transparent;
 		-webkit-text-stroke: 1px $blue;
 	}
-	
 }
 
 .section-padding {
 	@media (min-width: $mob-xs) {
 		padding: 40px 0;
-	};
+	}
 	@media (min-width: $tablet-w) {
 		padding: 100px 0 65px;
-	};
+	}
 	@media (min-width: $desk-w) {
-		padding: 160px 0 65px;	
-	};
+		padding: 160px 0 65px;
+	}
 }
 
 .white {
@@ -31,20 +29,34 @@
 .blue {
 	color: $blue;
 }
-
 .white-section {
 	margin-bottom: 20px;
 	padding-top: 60px;
 	@media (min-width: $mob-s) {
 		margin-bottom: 60px;
 		padding-top: 75px;
-	};
+	}
 	@media (min-width: $tablet-w) {
 		margin-bottom: 90px;
 		padding-top: 110px;
-	};
+	}
 	@media (min-width: $desk-w) {
 		margin-bottom: 160px;
 		padding-top: 160px;
-	};
+	}
+}
+
+.blue-section {
+	background: $blue;
+	padding: 60px 0 20px;
+	@media (min-width: $mob-s) {
+		padding-bottom: 60px;
+		padding: 75px 0 60px;
+	}
+	@media (min-width: $tablet-w) {
+		padding: 110px 0 90px;
+	}
+	@media (min-width: $desk-w) {
+		padding: 160px 0 110px;
+	}
 }

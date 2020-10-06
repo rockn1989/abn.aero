@@ -1,0 +1,69 @@
+.default-form {
+	.label-wrapper {
+		position: relative;
+	}
+	.uk-grid {
+		& > div {
+			@media (min-width: $mob-xs) {
+				margin-bottom: 60px;
+			}
+			@media (min-width: $tablet-w) {
+				margin-bottom: 80px;
+			}
+		}
+	}
+	input[type="text"],
+	input[type="number"],
+	input[type="email"],
+	textarea {
+		padding: 0;
+		padding: 0 10px 36px 0;
+		width: 100%;
+		border: none;
+		color: $white;
+		background-color: transparent;
+		border-bottom: 2px solid $white;
+		font-size: 21px;
+		line-height: 26px;
+		&:focus {
+			outline: none;
+		}
+		&.error {
+			border-bottom-color: #f2994a;
+		}
+	}
+	label:not([class="error"]) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $white;
+		font-size: 21px;
+		transition: transform 0.3s, font-size 0.3s ease;
+		&.focus {
+			transform: translateY(-24px);
+			font-size: 14px;
+			color: $lightBlue;
+		}
+	}
+	label.error {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 18px;
+		color: #f2994a;
+	}
+}
+
+.label-wrapper {
+	position: relative;
+}
+
+.form-politics {
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 16px;
+	color: $white;
+	a {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}

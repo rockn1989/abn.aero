@@ -9,10 +9,7 @@
 	background-position: 0 0, 0 center;
 	min-height: 100vh;
 	@media (min-width: $mob-xs) {
-		padding-top: 140px;
-	}
-	@media (min-width: $tablet-w) {
-		padding-top: 160px;
+		padding-top: 10px;
 	}
 	@media (min-width: $desk-w) {
 		padding-top: 200px;
@@ -35,7 +32,7 @@
 }
 
 .header-fixed {
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 50%;
 	width: 100%;
@@ -43,6 +40,16 @@
 	max-width: 1410px;
 	transform: translateX(-50%);
 	z-index: 700;
+	@media (min-width: $mob-xs) {
+		margin-bottom: 15px;
+	}
+	@media (min-width: $tablet-w) {
+		margin-bottom: 40px;
+	}
+	@media (min-width: $desk-w) {
+		position: fixed;
+		margin-bottom: 0;
+	}
 	&__inner {
 		display: flex;
 		align-items: center;

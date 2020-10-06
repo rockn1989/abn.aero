@@ -1,29 +1,29 @@
 .plan-voyage {
 	background: $blue;
 	&__inner {
-		background: url('../img/media/moscow.svg') 0 0 no-repeat;
+		background-repeat: no-repeat;
+		background-position: 0 0;
 		@media (min-width: $mob-xs) {
 			padding: 40px 0;
 			background-position: 75% 0;
-		};
+		}
 		@media (min-width: $tablet-w) {
 			padding: 100px 0 65px;
-		};
+		}
 		@media (min-width: $desk-w) {
-			padding: 160px 0 65px;	
+			padding: 160px 0 65px;
 			background-position: 0 0;
-		};
+		}
 	}
 	h2 {
 		color: $white;
 		max-width: 785px;
 		@media (min-width: $mob-xs) {
 			margin-bottom: 40px;
-		};
+		}
 		@media (min-width: $desk-w) {
-			margin-bottom: 150px;	
+			margin-bottom: 150px;
 			padding-left: 20%;
-		};
+		}
 	}
 }
-

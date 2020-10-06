@@ -1,0 +1,76 @@
+.default-modal {
+	padding: 0;
+	background: $blue;
+	.uk-modal-dialog {
+		width: 100%;
+		max-width: 100%;
+		background-color: transparent;
+	}
+	.uk-modal-header {
+		background: $blue;
+		border: none;
+		padding: 20px 0;
+	}
+	.uk-modal-body {
+		padding: 0;
+	}
+	.uk-modal-title {
+		@media (min-width: $mob-xs) {
+			margin-bottom: 50px;
+		}
+		@media (min-width: $desk-w) {
+			margin-bottom: 60px;
+			max-width: 80%;
+		}
+	}
+	.uk-modal-close-default {
+		position: static;
+		color: $white;
+		&:hover {
+			color: $lightBlue;
+			span.line {
+				background-color: $lightBlue;
+			}
+		}
+		span.line {
+			transition: background-color 0.3s ease;
+			background-color: $white;
+		}
+		svg {
+			display: none;
+		}
+	}
+	.top-bar {
+		@media (min-width: $mob-xs) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin-left: 0;
+		}
+		@media (min-width: $desk-w) {
+			width: auto;
+			margin-left: auto;
+		}
+		&__tel {
+			@media (min-width: $mob-xs) {
+				font-size: 16px;
+			}
+			@media (min-width: $mob-s) {
+				font-size: 18px;
+			}
+		}
+	}
+	.uk-text {
+		margin-bottom: 60px;
+		@media (min-width: $mob-xs) {
+			margin-top: 60px;
+		}
+		@media (min-width: $desk-w) {
+			margin-top: 140px;
+		}
+	}
+	p {
+		color: $white;
+	}
+}

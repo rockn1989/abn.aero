@@ -10,25 +10,63 @@
 	text-transform: uppercase;
 	text-align: center;
 	cursor: pointer;
-	background: linear-gradient(to right, $lightBlue 0%, $lightBlue 50%, $blue 50%);
+	background: linear-gradient(
+		to right,
+		$lightBlue 0%,
+		$lightBlue 50%,
+		$blue 50%
+	);
 	background-size: 200%;
 	background-position: 100%;
 	border: none;
-	transition: background-position .5s ease;
+	transition: background-position 0.5s ease;
 	&:hover {
 		color: $white;
 		text-decoration: none;
 		background-position: 0;
 	}
-	&:focus,&:active {
+	&:focus,
+	&:active {
 		border: none;
 		outline: none;
 	}
 	&--full {
 		width: 100%;
 	}
+	&--transparent {
+		&:focus,
+		&:active {
+			border: 1px solid $white;
+			background-color: linear-gradient(
+				to right,
+				$lightBlue 0%,
+				$lightBlue 50%,
+				transparent 50%
+			);
+			opacity: 0.5;
+		}
+		border: 1px solid $white;
+		background-color: linear-gradient(
+			to right,
+			$lightBlue 0%,
+			$lightBlue 50%,
+			transparent 50%
+		);
+		opacity: 0.5;
+		&:hover {
+			border-color: $lightBlue;
+			opacity: 1;
+		}
+	}
+	&--white {
+		opacity: 1;
+		border: 1px solid $white;
+		&:hover {
+			border-color: $lightBlue;
+			color: $white !important;
+		}
+	}
 }
-
 
 .btn-menu {
 	display: flex;
@@ -44,7 +82,7 @@
 		vertical-align: top;
 		width: 32px;
 		height: 15px;
-		&>span {
+		& > span {
 			position: absolute;
 			left: 0;
 			width: 32px;
@@ -52,7 +90,7 @@
 			display: block;
 			background: $white;
 			transform-origin: center;
-			transition: transform .3s ease;
+			transition: transform 0.3s ease;
 			&.line--one {
 				top: 0;
 			}

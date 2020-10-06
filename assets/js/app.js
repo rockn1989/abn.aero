@@ -1,4 +1,18 @@
 $(function () {
+	/*______ Lazy Load ______*/
+
+	$(".lazy").lazy({
+		scrollDirection: "vertical",
+		effect: "fadeIn",
+		effectTime: 1000,
+		threshold: 0,
+		visibleOnly: true,
+		placeholder: "../img/ajax-loader.gif",
+		onError: function (element) {
+			console.log("error loading " + element.data("src"));
+		},
+	});
+
 	const util = UIkit.util;
 
 	$(".route-img__map, .route-img").addClass("active");
