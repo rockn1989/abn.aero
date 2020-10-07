@@ -1,6 +1,25 @@
 .slider-voyage-section {
+	position: relative;
+	@media (min-width: $tablet-w) {
+		margin-bottom: 80px;
+	}
+	@media (min-width: $desk-w) {
+		margin-bottom: 60px;
+	}
 	.title-h2 {
 		margin-bottom: 80px;
 		color: $blue;
+	}
+	.uk-container--xlg {
+		padding-bottom: 50px;
+	}
+	.big-round-link {
+		margin: 30px auto 0;
+		@media (min-width: $tablet-w) {
+			position: absolute;
+			right: 15%;
+			bottom: -40px;
+			transform: translateY(50px);
+		}
 	}
 }

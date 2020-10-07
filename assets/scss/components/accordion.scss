@@ -1,9 +1,23 @@
 .uk-accordion {
 	li {
+		position: relative;
 		margin: 0;
 		padding: 1em 1em 0.75em;
 		border: 1px solid $lightBlue;
 		border-bottom-color: transparent;
+		&:after {
+			content: "";
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			left: -1px;
+			bottom: -2px;
+			display: block;
+			background-color: transparent;
+			border: 1px solid transparent;
+			z-index: 1;
+			pointer-events: none;
+		}
 		@media (min-width: $tablet-w) {
 			padding: 1.3em 1.3em 1em;
 		}
@@ -12,10 +26,14 @@
 		}
 		&:last-child {
 			border-bottom-color: $lightBlue;
+			&:after {
+				bottom: -1px;
+			}
 		}
 		&.uk-open {
-			border-color: $blue;
-			border-bottom-color: $blue;
+			&:after {
+				border-color: $blue;
+			}
 			.uk-accordion-title {
 				color: $blue;
 				&:before {

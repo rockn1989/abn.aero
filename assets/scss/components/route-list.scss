@@ -5,12 +5,23 @@
 	&__item-content {
 		position: relative;
 		padding-top: 55px;
-		color: $white;
 		flex-shrink: 0;
-		transition: transform 1.3s ease;
+		transition: background-position 1.3s ease;
 		flex-basis: calc(100% - 25px);
+		overflow: hidden;
+		width: 100%;
+		color: transparent;
+		background-image: linear-gradient(
+			to right,
+			$white 0%,
+			$white 50%,
+			transparent 50%
+		);
+		background-size: 200%;
+		background-position: 100%;
+		background-clip: text;
 		&:before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -20,27 +31,8 @@
 			border-radius: 50%;
 			background: $lightBlue;
 		}
+		&.text-width {
+			background-position: 0;
+		}
 	}
 }
-
-.animation-block-wrapper {
-	
-}
-
-.animation-block-wrapper {
-	position: relative;
-	display: flex;
-	width: 0;
-	height: 100%;
-	overflow: hidden;
-	transition: width .75s ease;
-	border: 1px solid red;
-	&.animation-width {
-		width: 100%;
-	}
-	&>* {
-		flex-shrink: 0;
-		width: calc(#{$containerWidthLg} / 3 - 25px);
-	}
-}
-

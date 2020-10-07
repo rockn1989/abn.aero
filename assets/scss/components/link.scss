@@ -57,3 +57,44 @@ a:not([class]) {
 	color: $lightBlue;
 	margin-top: auto;
 }
+
+.big-round-link {
+	border-radius: 50%;
+	background: linear-gradient(
+		to right,
+		$lightBlue 0%,
+		$lightBlue 50%,
+		$blue 50%
+	);
+	background-size: 200%;
+	background-position: 100%;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: background-position 0.3s ease;
+	@media (min-width: $mob-xs) {
+		padding: 1em;
+		width: 193px;
+		height: 193px;
+	}
+	@media (min-width: $tablet-w) {
+		padding: 2em;
+		width: 250px;
+		height: 250px;
+	}
+	@media (min-width: $desk-w) {
+		padding: 3.5em;
+		width: 305px;
+		height: 305px;
+	}
+	&:hover {
+		color: $white;
+		background-position: 0;
+		text-decoration: none;
+	}
+}

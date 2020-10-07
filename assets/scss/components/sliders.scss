@@ -1,38 +1,68 @@
 .slider-voyage {
 	.slider {
+		.slick-list {
+			@media (min-width: $mob-xs) {
+				margin: 0 -10px;
+			}
+			@media (min-width: $tablet-w) {
+				margin: 0 -20px;
+			}
+		}
 		.slick-track {
 			@media (min-width: $desk-w) {
 				padding-bottom: 165px;
 			}
 		}
-		.slick-list {
-			margin: 0 -10px;
-		}
 	}
 	.slide {
-		margin: 0 20px;
-		max-width: 425px;
 		outline: none;
-		filter: grayscale(100);
+		opacity: 0.7;
+		cursor: pointer;
+		@media (min-width: $mob-xs) {
+			width: 244px;
+			margin: 0 10px;
+		}
+		@media (min-width: $tablet-w) {
+			margin: 0 20px;
+			width: 425px;
+		}
 		&.slick-current {
-			filter: grayscale(0);
+			opacity: 1;
 			.slide__img {
 				&:hover {
 					transform: scale(2.1);
 					border-radius: 0;
 				}
 			}
+			.slide__dotted {
+				&:before {
+					background-color: $blue;
+				}
+			}
 		}
 		&:nth-child(even) {
 			.slide__desc {
-				order: 2;
-				margin-bottom: 80px;
+				order: 3;
 			}
 			.slide__step {
-				order: 1;
+				order: 2;
 			}
 			.slide__img {
-				order: 3;
+				margin-bottom: 40px;
+				order: 1;
+			}
+			@media (min-width: $tablet-w) {
+				.slide__desc {
+					order: 2;
+					margin-bottom: 80px;
+				}
+				.slide__step {
+					order: 1;
+				}
+				.slide__img {
+					margin-bottom: 0;
+					order: 3;
+				}
 			}
 		}
 		&:nth-child(odd) {
@@ -44,7 +74,19 @@
 			}
 			.slide__img {
 				order: 1;
-				margin-bottom: 80px;
+				margin-bottom: 40px;
+			}
+			@media (min-width: $tablet-w) {
+				.slide__desc {
+					order: 3;
+				}
+				.slide__step {
+					order: 2;
+				}
+				.slide__img {
+					order: 1;
+					margin-bottom: 80px;
+				}
 			}
 		}
 		&__dotted {
@@ -418,7 +460,7 @@
 		height: 116px;
 		border-radius: 50%;
 		border: 1px solid $white;
-		z-index: 800;
+		z-index: 400;
 		&:before {
 			display: none;
 		}
@@ -426,6 +468,7 @@
 			display: none !important;
 		}
 		&.slick-next {
+			right: 100px;
 			background: url("../img/icon-svg/chevron-right.svg") center no-repeat;
 			transition: background-color 0.3s ease;
 			&:hover {

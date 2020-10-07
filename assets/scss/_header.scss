@@ -12,9 +12,9 @@
 		padding-top: 10px;
 	}
 	@media (min-width: $desk-w) {
-		padding-top: 200px;
+		padding-top: 160px;
 	}
-	@media (min-width: $desk-w-lg) {
+	@media (min-width: 1400px) {
 		padding-top: 240px;
 	}
 	&:before {
@@ -33,12 +33,9 @@
 
 .header-fixed {
 	position: relative;
-	top: 0;
-	left: 50%;
 	width: 100%;
 	padding: 0 25px;
 	max-width: 1410px;
-	transform: translateX(-50%);
 	z-index: 700;
 	@media (min-width: $mob-xs) {
 		margin-bottom: 15px;
@@ -47,8 +44,15 @@
 		margin-bottom: 40px;
 	}
 	@media (min-width: $desk-w) {
+		transform: translateX(-50%) translateY(-100%);
 		position: fixed;
+		top: 0;
+		left: 50%;
 		margin-bottom: 0;
+		transition: transform 0.75s ease;
+		&.visible {
+			transform: translateX(-50%) translateY(0);
+		}
 	}
 	&__inner {
 		display: flex;

@@ -1,35 +1,34 @@
 <!-- begin top-banner -->
 <section class="top-banner">
 	<div class="uk-container uk-container--lg">
-		<div class="title-h1">
-			<span class="text-stroke-white">Хотите</span> познакомиться <span class="text-stroke-white">с необыкновенной техникой,</span> С настоящим гидросамолетом?  
+		<div class="title-h1" uk-scrollspy="cls: slide-up; delay: 500;">
+			<span class="text-stroke-white">Хотите</span>
+			познакомиться
+			<span class="text-stroke-white">с необыкновенной техникой,</span>
+			С настоящим гидросамолетом?
 		</div>
 
 
 		<section class="route-section">
 			<div class="route-img">
-				<div class="route-img__map">
-					<svg class="route-map" width="1226" height="139" viewBox="0 0 1226 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="route-img__map" uk-scrollspy="cls: active; delay: 800; hidden: false;">
+					<svg class="route-map" width="1226" height="139" viewbox="0 0 1226 139" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M1.5 135C1.5 135 133.994 81.2713 211 80.5C310.529 79.503 384.203 145.733 457.717 137.054C465.562 136.128 472.831 132.682 479.315 128.169L587.659 52.7635C609.939 37.2569 597.385 2.25929 570.329 4.45049V4.45049C550.404 6.06409 539.896 27.9065 552.701 43.2561C575.419 70.4883 610.129 104.448 645.5 110C714.095 120.768 725.522 51.0463 794.5 59C860.544 66.6154 868.52 135.372 935 135C1001.03 134.63 997.929 36.8445 1061.5 19C1147 -5 1185.5 28.5 1225 1" stroke="#7ABCF0" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 16"/>
 					</svg>
 				</div>
-				<div class="scroll-img">
+				<div class="scroll-img" uk-scrollspy="cls: active; delay: 2800;">
 					<img src="img/media/scroll.svg" alt="">
 				</div>
 			</div>
-			<ul class="route-list uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m" uk-grid uk-scrollspy="target: .animation-block-wrapper;cls: animation-width; delay: 500">
+			<ul class="route-list uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m" uk-grid uk-scrollspy="target: .route-list__item-content;cls: text-width; delay: 500; hidden: false;">
 				<li class="route-list__item">
-					<div class="animation-block-wrapper">
-						<div class="route-list__item-content">
-							Взлететь с Москва-реки, полюбоваться на достопримечательности Подмосковья и мосты 
-						МКАД с высоты птичьего полета?
-						</div>
+					<div class="route-list__item-content">
+						Взлететь с Москва-реки, полюбоваться на достопримечательности Подмосковья и мосты МКАД с высоты птичьего полета?
 					</div>
 				</li>
 				<li class="route-list__item">
 					<div class="route-list__item-content">
-						Совершить захватывающий дух вираж перед приводнением, 
-					пройти на глиссировании под мостом и мягко подойти к берегу? И все это в Москве!
+						Совершить захватывающий дух вираж перед приводнением,пройти на глиссировании под мостом и мягко подойти к берегу? И все это в Москве!
 					</div>
 				</li>
 				<li class="route-list__item">
@@ -38,7 +37,8 @@
 					</div>
 				</li>
 			</ul>
-		</section>		
+		</section>
 
 	</div>
-</section><!-- end top-banner -->
+</section>
+<!-- end top-banner -->

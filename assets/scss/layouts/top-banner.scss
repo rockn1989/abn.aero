@@ -8,7 +8,10 @@
 		@media (min-width: $mob-xs) {
 			margin-bottom: 40px;
 		}
-		@media (min-width: $desk-w-lg) {
+		@media (min-width: $desk-w) {
+			margin-bottom: 80px;
+		}
+		@media (min-width: 1366px) {
 			margin-bottom: 0;
 		}
 	}
@@ -21,7 +24,7 @@
 	@media (min-width: $mob-xs) {
 		display: none;
 	}
-	@media (min-width: $desk-w-lg) {
+	@media (min-width: 1366px) {
 		display: block;
 	}
 	&__map {
@@ -35,17 +38,18 @@
 			min-width: 1226px;
 		}
 	}
-	.scroll-img {
-		position: absolute;
-		top: -130px;
-		right: -20px;
-		opacity: 0;
-		transition: opacity 0.3s ease;
-		transition-delay: 2.8s;
-	}
+}
+
+.scroll-img {
+	position: absolute;
+	top: -130px;
+	right: -20px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 	&.active {
-		.scroll-img {
-			opacity: 1;
-		}
+		opacity: 1;
+	}
+	svg {
+		min-width: none;
 	}
 }
