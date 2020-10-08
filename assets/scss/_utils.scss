@@ -30,18 +30,18 @@
 	color: $blue;
 }
 .white-section {
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 	padding-top: 60px;
 	@media (min-width: $mob-s) {
-		margin-bottom: 60px;
+		padding-bottom: 60px;
 		padding-top: 75px;
 	}
 	@media (min-width: $tablet-w) {
-		margin-bottom: 90px;
+		padding-bottom: 90px;
 		padding-top: 110px;
 	}
 	@media (min-width: $desk-w) {
-		margin-bottom: 160px;
+		padding-bottom: 160px;
 		padding-top: 160px;
 	}
 }

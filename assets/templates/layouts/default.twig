@@ -3,17 +3,19 @@
 	{% include "../includes/head.twig" %}
 	<body>
 
-		{% include "../includes/header/header.twig" %}
 
 		<div class="page-wrapper">
-			<main class="main"> {% block content %}{% endblock %}
-				</main>
+			<div id="pagepiling">
+				{% include "../includes/header/header.twig" %}
+				{% block content %}{% endblock %}
+				{% include "../includes/footer.twig" %}
 			</div>
-			{% include "../includes/footer.twig" %}
-			{% include "../includes/components/modals.twig" %}
+		</div>
 
-			{% include "../includes/scripts.twig" %}
+		{% include "../includes/components/modals.twig" %}
+
+		{% include "../includes/scripts.twig" %}
 
 
-		</body>
-	</html>
+	</body>
+</html>
