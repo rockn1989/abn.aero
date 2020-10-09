@@ -1,5 +1,8 @@
 .instagram-section {
-	padding-top: 160px;
+	padding-top: 120px;
+	@media (min-width: $tablet-w) {
+		padding-top: 160px;
+	}
 	.link-wrapper {
 		height: 100%;
 		align-items: flex-end;

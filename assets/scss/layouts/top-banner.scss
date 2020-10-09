@@ -1,6 +1,7 @@
 .top-banner {
 	position: relative;
 	z-index: 20;
+	overflow-x: hidden;
 	.title-h1 {
 		position: relative;
 		color: $white;

@@ -4,10 +4,9 @@
 	<body>
 
 
+		{% include "../includes/header/header.twig" %}
 		<div class="page-wrapper">
-			<div id="pagepiling">
-				{% include "../includes/header/header.twig" %}
-				{% block content %}{% endblock %}
+			<div id="pagepiling"> {% block content %}{% endblock %}
 				{% include "../includes/footer.twig" %}
 			</div>
 		</div>

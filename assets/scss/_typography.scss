@@ -29,27 +29,20 @@ h1,
 		font-size: 72px;
 		line-height: 80px;
 	}
-	/* 	@media (min-width: $mob-xs) {
-		font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1410));
-		line-height: calc(30px + (16 + 16 * 0.7) * ((100vw - 320px) / 1410));
-	}
-	@media (min-width: $tablet-w) {
-		font-size: calc(32px + 16 * ((100vw - 768px) / 1410));
-		line-height: calc(30px + (16 + 16 * 0.7) * ((100vw - 768px) / 1410));
-	}
-	@media (min-width: $desk-w) {
-		font-size: calc(50px + 16 * (100vw / 1410));
-		line-height: calc(58px + 16 * (100vw / 1410));
-	} */
 }
 
 h2,
 .title-h2 {
 	font-size: 24px;
 	line-height: 30px;
+
+	@media (min-width: $mob-xs) {
+		word-break: break-word;
+	}
 	@media (min-width: $tablet-w) {
 		font-size: 44px;
 		line-height: 56px;
+		word-break: normal;
 	}
 	@media (min-width: $desk-w-lg) {
 		font-size: 64px;

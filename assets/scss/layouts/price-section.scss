@@ -1,0 +1,12 @@
+.price-section {
+	padding-top: 60px;
+	@media (min-width: $mob-s) {
+		padding-top: 120px;
+	}
+	@media (min-width: $tablet-w) {
+		padding-top: 140px;
+	}
+	@media (min-width: $desk-w) {
+		padding-bottom: 160px;
+	}
+}

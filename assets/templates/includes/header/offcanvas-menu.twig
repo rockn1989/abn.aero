@@ -1,7 +1,7 @@
 <div id="offcanvas-menu" class="uk-offcanvas" uk-offcanvas="flip: true">
 	<div class="uk-offcanvas-bar">
 		<div class="uk-panel__top uk-flex uk-flex-between uk-flex-middle">
-			<a href="tel:+79857656664">+7 (985) 765-66-64</a>
+			<a href="tel:+79857656664" class="tel">+7 (985) 765-66-64</a>
 			<a href="#sign-up-modal" class="btn uk-visible@m">записаться</a>
 			<a href="" uk-toggle="target: #offcanvas-menu" class="btn-menu active">
 				<span class="btn-menu__burger">
@@ -12,24 +12,24 @@
 			</a>
 		</div>
 		<div class="uk-panel">
-			<ul id="menu" class="uk-nav">
-				<li data-menuanchor="section-1" class="active">
-					<a href="#section-1">О нас</a>
+			<ul class="uk-nav">
+				<li class="active">
+					<a href="#about" data-section="1" class="js__swipe-section">О нас</a>
 				</li>
-				<li data-menuanchor="desc">
-					<a href="#desc">Описание</a>
+				<li>
+					<a href="#desc" data-section="2" class="js__swipe-section">Описание</a>
 				</li>
-				<li data-menuanchor="plan">
-					<a href="#plan">План полета</a>
+				<li>
+					<a href="#plan" data-section="3" data-inner-section="true" class="js__swipe-section">План полета</a>
 				</li>
-				<li data-menuanchor="plain">
-					<a href="#plain">О самолете</a>
+				<li>
+					<a href="#plain" data-section="3" data-inner-section="true" class="js__swipe-section">О самолете</a>
 				</li>
-				<li data-menuanchor="comments">
-					<a href="#comments">Отзывы</a>
+				<li>
+					<a href="#comments" data-section="5" class="js__swipe-section">Отзывы</a>
 				</li>
-				<li data-menuanchor="price">
-					<a href="#price">Стоимость</a>
+				<li>
+					<a href="#price" data-section="6" data-inner-section="true" class="js__swipe-section">Стоимость</a>
 				</li>
 			</ul>
 		</div>

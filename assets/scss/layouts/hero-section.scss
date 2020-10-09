@@ -1,0 +1,17 @@
+.hero-section {
+	&__inner {
+		position: relative;
+		padding-top: 120px;
+		padding-bottom: 50px;
+		min-height: 100%;
+		@media (min-width: $mob-xs) {
+			padding-top: 120px;
+		}
+		@media (min-width: $desk-w) {
+			padding-top: 160px;
+		}
+		@media (min-width: 1400px) {
+			padding-top: 240px;
+		}
+	}
+}

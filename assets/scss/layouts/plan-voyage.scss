@@ -4,11 +4,11 @@
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		@media (min-width: $mob-xs) {
-			padding: 40px 0;
+			padding: 120px 0 40px;
 			background-position: 75% 0;
 		}
 		@media (min-width: $tablet-w) {
-			padding: 100px 0 65px;
+			padding: 140px 0 65px;
 		}
 		@media (min-width: $desk-w) {
 			padding: 160px 0 65px;

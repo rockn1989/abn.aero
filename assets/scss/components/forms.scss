@@ -10,6 +10,9 @@
 			@media (min-width: $tablet-w) {
 				margin-bottom: 80px;
 			}
+			&:last-child {
+				margin-bottom: 30px;
+			}
 		}
 	}
 	input[type="text"],
@@ -58,7 +61,7 @@
 }
 
 .form-politics {
-	margin-top: 20px;
+	margin: 20px 0;
 	font-size: 14px;
 	line-height: 16px;
 	color: $white;

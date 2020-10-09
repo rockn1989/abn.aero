@@ -1,7 +1,7 @@
 $(function () {
 	/*______ Header fixed animation ______*/
 
-	$(".header-fixed").addClass("visible");
+	$(".header").addClass("visible");
 
 	/*______ Close offcanvas menu ______*/
 
@@ -73,18 +73,35 @@ $(function () {
 			"#0365DF",
 			"#ffffff",
 		],
-		anchors: ["desc", "plan", "plain", "comments", "price", "map"],
 		menu: "#menu",
 		navigation: false,
-		afterRender: function () {
-			$("#pp-nav").addClass("custom");
-		},
-		afterLoad: function (anchorLink, index) {
-			if (index > 1) {
-				$("#pp-nav").removeClass("custom");
-			} else {
-				$("#pp-nav").addClass("custom");
-			}
-		},
 	});
+
+	/**
+	 * Принудительный скролл между секциями по клику на ссылку.
+	 */
+
+	const headerFixedHeight = $('.header-fixed').outerHeight();
+
+	function switchActiveSection(e) {
+		e.preventDefault();
+		
+		const anchor = $(this).data('section');
+		const innerSection = $(this).data('inner-section');
+		if(innerSection) {
+			$.fn.pagepiling.moveTo(anchor);
+
+			const id = $(this).attr('href');
+			const sectionAnchor = $(id);
+			const pos = $('.section.active').scrollTop() + sectionAnchor.position().top;
+
+			$('.section.active').animate({ scrollTop: pos - headerFixedHeight}, 1200)
+		} else {
+			$.fn.pagepiling.moveTo(anchor);
+		};
+	}
+
+
+	$('.js__swipe-section').on('click', switchActiveSection);
+
 });

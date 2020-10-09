@@ -1,31 +1,33 @@
 <!-- begin video-slider-section -->
 <section class="section pp-scrollable video-slider-section">
-	<div class="uk-container uk-container--xlg">
-		<div class="video-slider">
-			<div class="slider">
-				{% for item in 1..4 %}
-					<div class="slide">
-						<div class="youtube" data-embed="WqZZppQd87M">
-							<div class="play-btn icon-youtube"></div>
-							<div class="youtube__title title-h2 white">
-								<span class="text-stroke-white">Посмотрите как</span>
-								мы летаем в москве</div>
+	<div class="video-slider-section__inner">
+		<div class="uk-container uk-container--xlg">
+			<div class="video-slider">
+				<div class="slider">
+					{% for item in 1..4 %}
+						<div class="slide">
+							<div class="youtube" data-embed="WqZZppQd87M">
+								<div class="play-btn icon-youtube"></div>
+								<div class="youtube__title title-h2 white">
+									<span class="text-stroke-white">Посмотрите как</span>
+									мы летаем в москве</div>
+							</div>
 						</div>
-					</div>
-				{% endfor %}
-			</div>
-			<div class="video-slider-arrows-wrapper uk-visible@m">
-				<div class="uk-container uk-container--xlg">
-					<div class="slider__arrows">
-						<div class="slide-prev">
-							<svg width="75px" height="15px" class="icon-arrow">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-left-big"></use>
-							</svg>
-						</div>
-						<div class="slide-next">
-							<svg width="75px" height="15px" class="icon-arrow">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-right-big"></use>
-							</svg>
+					{% endfor %}
+				</div>
+				<div class="video-slider-arrows-wrapper uk-visible@m">
+					<div class="uk-container uk-container--xlg">
+						<div class="slider__arrows">
+							<div class="slide-prev">
+								<svg width="75px" height="15px" class="icon-arrow">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-left-big"></use>
+								</svg>
+							</div>
+							<div class="slide-next">
+								<svg width="75px" height="15px" class="icon-arrow">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-right-big"></use>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>

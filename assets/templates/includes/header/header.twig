@@ -1,12 +1,8 @@
 {% block content %}
 
-	<section class="section section-1 pp-scrollable">
-		<header class="header">
-			{% include "./header-fixed.twig" %}
-			{% include "../components/video-banner.twig" %}
-			{% include "../components/top-banner.twig" %}
-			{% include "./offcanvas-menu.twig" %}
-		</header>
-	</section>
 
+	<header class="header">
+		{% include "./header-fixed.twig" %}
+	</header>
+	{% include "./offcanvas-menu.twig" %}
 {% endblock %}
