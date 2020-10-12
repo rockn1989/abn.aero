@@ -56,18 +56,12 @@ $(function () {
 				breakpoint: 960,
 				settings: {
 					slidesToShow: 1,
-					dots: false,
-					variableWidth: true,
-				},
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
 					dots: true,
 					variableWidth: false,
+					arrows: false,
 				},
 			},
 		],
 	});
+	
 });

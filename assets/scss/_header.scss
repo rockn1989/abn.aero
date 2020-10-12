@@ -44,8 +44,11 @@
 
 .top-bar {
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	margin-left: auto;
+	&__tel {
+		align-self: center;
+	}
 	& > a {
 		margin-left: 60px;
 		color: $white;
