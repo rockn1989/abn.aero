@@ -17,16 +17,16 @@ $(function () {
 	$(".sign-up-form").validate({
 		ignore: ".ignore",
 		rules: {
-			["user-name"]: {
+			"user-name": {
 				required: true,
 			},
-			["user-tel"]: {
+			"user-tel": {
 				required: true,
 			},
 		},
 		messages: {
-			["user-name"]: "Неправильно заполнено поле",
-			["user-tel"]: "Неправильно заполнено поле",
+			"user-name": "Неправильно заполнено поле",
+			"user-tel": "Неправильно заполнено поле",
 		},
 		submitHandler: function () {
 			$.ajax({

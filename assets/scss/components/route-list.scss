@@ -10,16 +10,7 @@
 		flex-basis: calc(100% - 25px);
 		overflow: hidden;
 		width: 100%;
-		color: transparent;
-		background-image: linear-gradient(
-			to right,
-			$white 0%,
-			$white 50%,
-			transparent 50%
-		);
-		background-size: 200%;
-		background-position: 100%;
-		background-clip: text;
+		color: $white;
 		&:before {
 			content: "";
 			position: absolute;
@@ -31,6 +22,22 @@
 			border-radius: 50%;
 			background: $lightBlue;
 		}
+	}
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) or
+	(-moz-background-clip: text) {
+	.route-list__item-content {
+		color: transparent;
+		background-image: linear-gradient(
+			to right,
+			$white 0%,
+			$white 50%,
+			transparent 50%
+		);
+		background-size: 200%;
+		background-position: 100%;
+		background-clip: text;
 		&.text-width {
 			background-position: 0;
 		}

@@ -104,4 +104,24 @@ $(function () {
 
 	$('.js__swipe-section').on('click', switchActiveSection);
 
+
+	/**
+	 * Svg-sprite fro all browsers
+	 */
+
+	svg4everybody();
+
+	/**
+	 * Object-fit polyfill
+	 */
+
+	if('objectFit' in document.documentElement.style === false) {
+		var script = document.createElement('script');
+		script.src = 'libs/ofi.min.js';
+		document.body.appendChild(script);
+		script.onload = function () {
+			objectFitImages();
+		};
+	}
+
 });
