@@ -34,7 +34,7 @@ $(function () {
 				url: "https://jsonplaceholder.typicode.com/posts",
 				data: $(".sign-up-form").serialize(),
 				beforeSend: function () {
-					$(".sign-up-form").css("opacity", 0.5);
+					$(".sign-up-form").addClass('sending');
 				},
 			})
 				.done(function (msg) {
@@ -45,7 +45,7 @@ $(function () {
 					console.log(msg);
 				})
 				.always(function () {
-					$(".sign-up-form").css("opacity", 1);
+					$(".sign-up-form").removeClass('sending');
 				});
 		},
 	});
